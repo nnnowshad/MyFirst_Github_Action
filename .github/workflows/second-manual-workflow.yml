@@ -1,0 +1,11 @@
+name: second-manual-action-workflow
+on:
+    workflow_dispatch:
+jobs:
+    second-manual-workflow:
+        runs-on: ubuntu-latest
+        steps:
+            - name: first step
+              run: |
+                  echo "This is manual trigger workflow using $(uname) OS"
+                  echo "My second Testing workflow Action "
