@@ -1,0 +1,10 @@
+name: first Github Action Workflow
+on: [push]
+jobs:
+    first-Linux-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: first-step
+              run: |
+                  echo "my first Action using $(uname) OS version $(BASH_VERSION)"
+                  echo "Testing done 1"
